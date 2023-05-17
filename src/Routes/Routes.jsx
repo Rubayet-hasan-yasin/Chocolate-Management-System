@@ -3,7 +3,7 @@ import Login from "../Pages/Login/Login";
 import Home from "../Pages/Home/Home";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
-import AddCocolate from "../Pages/AddCocolate/AddCocolate";
+import AddCocolate from "../Pages/AddChocolate/AddChocolate";
 
 const router = createBrowserRouter([
     {
