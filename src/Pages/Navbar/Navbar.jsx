@@ -17,7 +17,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 max-w-7xl mx-auto">
             <div className="flex-1">
                 <Link to={'/'} className="btn btn-ghost normal-case text-xl">Chocolate Management System</Link>
             </div>

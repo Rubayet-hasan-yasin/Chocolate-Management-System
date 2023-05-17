@@ -2,13 +2,16 @@ import React from 'react';
 import { GiChocolateBar } from "react-icons/gi";
 import { FaPlus } from "react-icons/fa";
 import Navbar from '../Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
         <div className='max-w-7xl mx-auto'>
             <Navbar />
 
-            <button className='flex items-center gap-3 border py-3 px-5 rounded-lg'><FaPlus/> New Chocolate <GiChocolateBar/></button>
+            <Link to={'/newCocolate'}>
+                <button className='flex items-center gap-3 border py-3 px-5 rounded-lg'><FaPlus /> New Chocolate <GiChocolateBar /></button>
+            </Link>
 
 
             {/* table */}
@@ -59,7 +62,7 @@ const Home = () => {
                                 <button className="btn btn-ghost btn-xs">details</button>
                             </th>
                         </tr>
-                        
+
                     </tbody>
 
                 </table>

@@ -3,11 +3,16 @@ import Login from "../Pages/Login/Login";
 import Home from "../Pages/Home/Home";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import AddCocolate from "../Pages/AddCocolate/AddCocolate";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <PrivateRoute><Home/></PrivateRoute>
+    },
+    {
+        path: '/newCocolate',
+        element: <PrivateRoute><AddCocolate/></PrivateRoute>
     },
     {
         path: '/login',
